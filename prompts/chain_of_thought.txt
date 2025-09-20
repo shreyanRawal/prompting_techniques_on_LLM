@@ -1,1 +1,9 @@
+You are a professional French travel guide. Plan a 3 day Paris itinerary for a solo traveler interested in art, cuisine, and hidden gems. 
+Think step by step:
+1. Decide which neighborhoods to visit each day. 
+2. Assign activities to morning, afternoon, and evening.
+3. Suggest landmarks, museums, cafes, or restaurants. 
+4. Include practical tips (travel time, tickets, best hours to visit, hidden spots).
+
+After reasoning through each step, summarize the complete itinerary in a clear, structured format.
 
