@@ -1,0 +1,701 @@
+1. Zero-Shot Prompting (Direct, clear, no examples)
+
+Input:
+You are an expert French travel guide. Create a 3-day Paris itinerary for a solo traveler who loves art, local cuisine, and hidden gems. 
+Include the following in your plan:
+- Morning, afternoon, and evening activities
+- Must-visit landmarks and hidden spots
+- Local cafes or restaurants
+- Practical travel tips
+Keep the plan concise, actionable, and easy to follow.
+
+Output:
+# 3-Day Paris Solo Travel Itinerary
+*For art lovers seeking authentic flavors and secret spots*
+
+## Day 1: Classic Paris with Secret Corners
+
+### Morning (9:00-12:00)
+**Start at Café de Flore** (6th arrondissement) - Begin with café au lait and croissant at this historic literary café where Sartre and de Beauvoir once wrote.
+
+**Visit Musée d'Orsay** - Beat the crowds at this stunning Impressionist collection. Focus on the 5th floor for Monet, Renoir, and van Gogh.
+
+### Afternoon (12:00-17:00)
+**Lunch at L'As du Fallafel** (4th arrondissement) - Grab the famous falafel in the Marais Jewish quarter.
+
+**Explore hidden passages**: Galerie Vivienne and Passage des Panoramas - These 19th-century covered galleries house vintage bookshops, antique stores, and cozy wine bars.
+
+**Secret spot**: Place des Vosges - Paris's oldest planned square, perfect for people-watching with a book.
+
+### Evening (17:00-21:00)
+**Apéro at Hemingway Bar** (Ritz Hotel) - Expensive but iconic for one perfect cocktail.
+
+**Dinner at Le Comptoir du Relais** (6th arrondissement) - Authentic bistro with no reservations; arrive early or late.
+
+**Evening stroll**: Cross Pont Neuf at sunset for magical Seine views.
+
+---
+
+## Day 2: Montmartre & Local Neighborhoods
+
+### Morning (9:00-12:00)
+**Coffee at La Caféothèque** (4th arrondissement) - Third-wave coffee roastery run by coffee obsessives.
+
+**Climb to Sacré-Cœur** via the back streets of Montmartre - Skip the touristy front approach. Use Rue Lepic and discover windmills.
+
+**Hidden gem**: Musée de Montmartre - Small museum in Renoir's former studio with secret gardens.
+
+### Afternoon (12:00-17:00)
+**Lunch at Le Consulat** (Montmartre) - Traditional French bistro where Picasso dined.
+
+**Art exploration**: Place du Tertre for street artists, then visit **Espace Dalí** - quirky museum dedicated to Salvador Dalí's surrealist works.
+
+**Local secret**: Rue Crémieux (12th arrondissement) - Instagram-famous colorful street that feels like a village.
+
+### Evening (17:00-21:00)
+**Wine at Le Mary Celeste** (3rd arrondissement) - Natural wine bar with small plates in trendy Marais.
+
+**Dinner at Breizh Café** (3rd arrondissement) - Modern Japanese-French crêperie fusion.
+
+**Night walk**: Canal Saint-Martin for local nightlife and reflection by the water.
+
+---
+
+## Day 3: Museums & Secret Paris
+
+### Morning (9:00-12:00)
+**Breakfast at Du Pain et des Idées** (10th arrondissement) - Best pastries in Paris; try the escargot pistachio.
+
+**Musée Rodin** - Stunning sculpture garden and The Thinker. Less crowded than Louvre but equally magnificent.
+
+### Afternoon (12:00-17:00)
+**Lunch at L'Ami Jean** (7th arrondissement) - Basque-influenced bistro beloved by locals.
+
+**Hidden treasure**: **Musée Jacquemart-André** - Mansion-turned-museum with impressive private art collection and beautiful café.
+
+**Secret garden**: Square du Vert-Galant (Île de la Cité) - Tiny park at the tip of the island, perfect for river contemplation.
+
+### Evening (17:00-21:00)
+**Sunset drinks**: Rooftop of Galeries Lafayette (free access) or **Bar Hemingway** if you skipped Day 1.
+
+**Final dinner at Le Châteaubriand** (11th arrondissement) - Innovative tasting menu that changes daily (book ahead).
+
+**Farewell walk**: Seine riverbanks at night with Notre-Dame illuminated in the distance.
+
+---
+
+## Practical Solo Travel Tips
+
+### Transportation
+- **Navigo Easy Card**: Load with individual tickets or day passes
+- **Walking**: Most attractions are walkable; Paris rewards slow exploration
+- **Metro safety**: Keep bag zipped, avoid empty cars late at night
+
+### Money-Saving Tips
+- Museum pass worth it if visiting 3+ museums
+- Lunch menus (prix fixe) offer better value than dinner
+- Happy hour ("5 à 7") at wine bars for cheaper drinks
+
+### Solo Dining
+- **Café counter seating**: Perfect for solo travelers
+- **Lunch reservations**: Easier to get than dinner
+- **Market picnics**: Marché Saint-Germain for gourmet takeaway
+
+### Cultural Etiquette
+- Greet shopkeepers with "Bonjour/Bonsoir"
+- Bread on table, not plate
+- Tipping 5-10% appreciated but not mandatory
+
+### Hidden Local Secrets
+- **Free museum days**: First Sunday mornings at many museums
+- **Pharmacy green cross**: Always lit when open for emergencies
+- **Café prices**: Cheaper at counter than table service
+
+### Best Times to Visit Attractions
+- **Museums**: Early morning or late afternoon
+- **Sacré-Cœur**: Sunrise or sunset
+- **Seine walks**: Golden hour before dinner
+
+
+
+2. Few-Shot Prompting (Guided by examples)
+
+Input:
+Examples:
+
+1. Visit the Louvre at Morning: Arrive early to avoid crowds. Spend 2–3 hours exploring key exhibits. Afternoon: Walk through Jardin des Tuileries. Evening: Dine at Café Marly.
+
+2. Try French pastries at Morning: Visit a local boulangerie, taste croissants and pain au chocolat. Afternoon: Explore a local market. Evening: Enjoy dinner at a traditional French bistro.
+
+Task: Plan a 3-day Paris itinerary for a solo traveler who loves art, local cuisine, and hidden gems. Follow the style of the examples: break each activity by time of day, provide tips, and include landmarks and restaurants.
+
+Bon voyage! Each neighborhood has its own personality - embrace getting lost and discovering your own hidden corners.
+
+Output:
+# 3-Day Paris Solo Travel Itinerary
+*Art, Local Cuisine & Hidden Gems for Solo Travelers*
+
+## Day 1: Classic Art & Secret Passages
+
+### Morning: Musée d'Orsay
+Arrive at 9:00 AM to beat crowds. Spend 2–3 hours exploring the world's finest Impressionist collection on the 5th floor. Focus on Monet's water lilies and van Gogh's self-portraits. **Tip**: Enter through the less crowded side entrance on Rue de Bellechasse.
+
+### Afternoon: Hidden Galeries & Marais
+Walk through Galerie Vivienne and Passage des Panoramas—19th-century covered shopping arcades with vintage bookshops and antique dealers. Then explore Place des Vosges, Paris's oldest planned square. **Tip**: Bring a book for peaceful people-watching under the arcades.
+
+### Evening: Authentic Bistro
+Dine at Le Comptoir du Relais in Saint-Germain. No reservations accepted, so arrive at 6:30 PM or after 9:00 PM. Try their daily changing menu featuring classic French dishes. **Tip**: Chat with solo diners at the bar counter for local recommendations.
+
+---
+
+## Day 2: Montmartre Artists & Local Markets
+
+### Morning: Sacré-Cœur via Back Streets
+Climb to Sacré-Cœur using Rue Lepic to discover the remaining windmills of Montmartre. Visit the small Musée de Montmartre in Renoir's former studio. Spend 2 hours exploring the museum and its secret gardens. **Tip**: Skip the funicular and walk up the winding cobblestone streets for authentic atmosphere.
+
+### Afternoon: Artist Quarter & Canal Saint-Martin
+Explore Place du Tertre where Picasso and Renoir once painted. Watch street artists create portraits, then head to Canal Saint-Martin neighborhood. Browse the Sunday market at Marché Saint-Germain for local cheeses and charcuterie. **Tip**: Pack a picnic from the market to enjoy by the canal locks.
+
+### Evening: Natural Wine & Modern Crêpes
+Start with apéro at Le Mary Celeste, a natural wine bar in the Marais with excellent small plates. Then dine at Breizh Café for innovative Japanese-French crêpe fusion. **Tip**: Sit at the counter to watch the chefs work and practice your French with the staff.
+
+---
+
+## Day 3: Secret Museums & Rooftop Views
+
+### Morning: Rodin Sculpture Garden
+Visit Musée Rodin when it opens at 10:00 AM. Spend 2 hours in the sculpture garden and mansion viewing The Thinker and The Kiss. The gardens are perfect for solo contemplation. **Tip**: The museum café serves excellent coffee in the garden setting.
+
+### Afternoon: Hidden Mansion Museum & Secret Garden
+Explore Musée Jacquemart-André, a 19th-century mansion with an impressive private art collection. Then discover Square du Vert-Galant, a tiny triangular park at the tip of Île de la Cité. **Tip**: This hidden garden offers the best Seine views without crowds—perfect for journaling.
+
+### Evening: Rooftop Sunset & Innovative Dining
+Catch sunset from the free rooftop terrace at Galeries Lafayette (9th floor). Then dine at Le Châteaubriand for an innovative tasting menu that changes daily based on market ingredients. **Tip**: Book dinner reservations 2 weeks ahead, or try for a last-minute bar seat at 6:00 PM.
+
+---
+
+## Must-Try Local Experiences
+
+### Breakfast Spots
+**Du Pain et des Idées**: Best pastries in Paris. Try the escargot pistachio and pain des amis. Arrive at 8:00 AM for the warmest selection.
+
+**Café de Flore**: Historic literary café where Hemingway wrote. Order café au lait and observe Parisian morning rituals.
+
+### Hidden Food Gems
+**L'As du Fallafel (Marais)**: Famous falafel in the Jewish quarter. Join the queue—it moves quickly and the wait is worth it.
+
+**L'Ami Jean**: Basque-influenced bistro beloved by locals. Try the rice pudding dessert that's been unchanged for 20 years.
+
+### Secret Spots
+**Rue Crémieux**: Colorful cobblestone street that feels like a hidden village in the 12th arrondissement.
+
+**Promenade Plantée**: Elevated park built on old railway tracks. Less touristy than the High Line's inspiration in New York.
+
+---
+
+## Solo Travel Tips
+
+### Museum Strategy
+Purchase Museum Pass for skip-the-line access. Visit major museums early morning or late afternoon. Take breaks in museum cafés to process what you've seen.
+
+### Dining Alone
+Sit at bar counters for the best solo experience. Lunch menus offer better value than dinner. Greet staff with "Bonjour"—essential Parisian etiquette.
+
+### Navigation & Safety
+Download offline maps. Keep Metro tickets in a separate pocket. Avoid empty Metro cars late at night. Most attractions are walkable—embrace getting lost in charming neighborhoods.
+
+### Money-Saving Tricks
+Happy hour ("5 à 7") at wine bars. Picnic supplies from local markets. Free museum entry on first Sunday mornings. Counter service cheaper than table service at cafés.
+
+
+
+3. Chain-of-Thought Prompting (CoT, step-by-step reasoning)
+
+Input:
+You are a professional French travel guide. Plan a 3-day Paris itinerary for a solo traveler interested in art, cuisine, and hidden gems. 
+Think step by step:
+1. Decide which neighborhoods to visit each day. 
+2. Assign activities to morning, afternoon, and evening.
+3. Suggest landmarks, museums, cafes, or restaurants. 
+4. Include practical tips (travel time, tickets, best hours to visit, hidden spots).
+After reasoning through each step, summarize the complete itinerary in a clear, structured format.
+
+Output:
+Let me think through this step by step as a professional French travel guide.Step 1: Neighborhood StrategyDay 1: Right Bank classics - 1st/4th arrondissements (Louvre, Marais)
+Day 2: Left Bank culture - 5th/6th/7th arrondissements (Latin Quarter, Saint-Germain, Invalides)
+Day 3: Montmartre & Northern districts - 9th/18th arrondissements (artistic heritage)This routing minimizes travel time and creates thematic coherence each day.Step 2: Time Allocation LogicMornings: Major museums (fewer crowds, fresh energy)
+Afternoons: Neighborhood exploration, hidden spots, lighter cultural sites
+Evenings: Dining experiences, atmospheric walksStep 3: Venue Selection Criteria
+Art: Mix world-famous (Louvre) with intimate (Musée de la Vie Romantique)
+Cuisine: Balance classic bistros with modern interpretations
+Hidden gems: Covered passages, secret gardens, local markets unknown to most tourists
+Step 4: Practical Considerations
+Travel time: All activities within 15-20 minutes of each other
+Crowd management: Early museum visits, off-peak dining
+Solo-friendly: Counter seating, welcoming atmospheres, safe neighborhoods
+
+# 3-Day Paris Solo Itinerary
+*Professional Guide for Art, Cuisine & Hidden Gems*
+
+---
+
+## Day 1: Right Bank Classics & Secret Passages
+**Focus**: 1st & 4th Arrondissements
+
+### Morning: Louvre Mastery (9:00-12:00)
+**Venue**: Musée du Louvre  
+**Strategy**: Enter at Porte des Lions (least crowded entrance). Focus on Denon Wing: Mona Lisa, Venus de Milo, Winged Victory. Spend 3 hours maximum to avoid fatigue.  
+**Practical**: Pre-book timed entry tickets online. Arrive 15 minutes early.  
+**Hidden tip**: Visit the medieval Louvre foundations in the basement—most tourists skip this.
+
+### Afternoon: Covered Passages & Marais (12:00-18:00)
+**Route**: Galerie Vivienne → Passage des Panoramas → Place des Vosges  
+**Lunch**: Café Vivienne inside Galerie Vivienne (historic 1882 setting, perfect for solo dining at marble-top tables)  
+**Hidden gem**: Passage Brady ("Little India" of Paris) - authentic Indian spices and textiles  
+**Art stop**: Place des Vosges galleries - browse contemporary art in 17th-century arcades
+
+### Evening: Authentic Marais (18:00-21:00)
+**Apéritif**: La Belle Hortense (wine bar + bookshop hybrid)  
+**Dinner**: L'As du Fallafel (4 rue des Rosiers) - join the queue at 7 PM, world-famous falafel in Jewish quarter  
+**Evening walk**: Rue Saint-Antoine to Place de la Bastille - beautifully lit historic route
+
+**Travel**: All locations within 10-minute walk. Use Métro Line 1 (Louvre-Rivoli to Saint-Paul)
+
+---
+
+## Day 2: Left Bank Intellectual Heritage
+**Focus**: 5th, 6th & 7th Arrondissements
+
+### Morning: Musée d'Orsay Excellence (9:30-12:30)
+**Venue**: Musée d'Orsay (world's finest Impressionist collection)  
+**Strategy**: Start on Level 5 with Impressionists, work down. Don't miss the giant station clock with Seine views.  
+**Practical**: Wednesday/Friday open until 9:45 PM if you prefer evening visits  
+**Hidden tip**: Former railway station's original restaurant is now Café des Hauteurs with spectacular views
+
+### Afternoon: Saint-Germain & Hidden Gardens (12:30-18:00)
+**Lunch**: Le Procope (oldest café in Paris, 1686 - Voltaire's table still there)  
+**Culture**: Musée Delacroix - intimate artist's studio and garden, often overlooked  
+**Hidden gem**: Square Gabriel-Pierné - secret garden behind Notre-Dame with best cathedral views  
+**Shopping**: Rue de Buci market street - local produce, cheese, wine for evening picnic
+
+### Evening: Latin Quarter Ambiance (18:00-21:00)
+**Sunset**: Pont de la Tournelle - most romantic Seine crossing at golden hour  
+**Dinner**: Le Comptoir du Relais (9 carrefour de l'Odéon) - no reservations, arrive at 6:30 PM or after 9 PM for authentic bistro experience  
+**Nightcap**: Hemingway Bar at Ritz (expensive but iconic) or Harry's Bar (more accessible, invented Bloody Mary)
+
+**Travel**: RER B to Saint-Michel, then walking. Everything connected by beautiful bridges.
+
+---
+
+## Day 3: Montmartre Artists & Northern Secrets
+**Focus**: 9th & 18th Arrondissements
+
+### Morning: Sacré-Cœur via Artist Route (9:00-12:00)
+**Breakfast**: Pierre Hermé (72 rue Bonaparte) - world's best macarons with morning coffee  
+**Route**: Take Métro to Abbesses, climb Rue Lepic past Moulin de la Galette windmill  
+**Venue**: Musée de Montmartre - Renoir's former studio with vineyard garden  
+**Hidden tip**: Clos Montmartre vineyard (only vineyard in Paris) - harvest festival in October
+
+### Afternoon: Alternative Montmartre & Pigalle (12:00-18:00)
+**Lunch**: Le Consulat (18 rue Norvins) - where Picasso dined, unchanged since 1900  
+**Art**: Espace Dalí - surrealist museum in Montmartre's heart  
+**Hidden gem**: Rue Crémieux (12th arr.) - most colorful street in Paris, feels like toy village  
+**Local secret**: Marché aux Puces flea market (weekends) - Europe's largest antique market
+
+### Evening: Modern Montmartre (18:00-21:00)
+**Aperitif**: Dirty Dick (10 rue Frochot) - speakeasy-style cocktails in Pigalle  
+**Dinner**: Le Chateaubriand (129 avenue Parmentier) - innovative tasting menu, book 2 weeks ahead  
+**Alternative**: Pink Mamma (rooftop pizzeria with Eiffel Tower views if Chateaubriand full)  
+**Night walk**: Boulevard de Clichy - see can-can birthplace at Moulin Rouge (exterior)
+
+**Travel**: Métro Line 12 connects everything. Funicular to Sacré-Cœur if tired of climbing.
+
+---
+
+## Essential Solo Travel Intelligence
+
+### Timing Mastery
+- **Museums**: 9-10 AM (crowds arrive 11 AM+)
+- **Restaurants**: 12 PM lunch, 7 PM dinner (French schedule)
+- **Markets**: Morning for best selection
+- **Golden hour**: 6-8 PM in summer for photography
+
+### Money Strategy
+- **Museum Pass**: €78 for 3 days, skip lines + 60 sites
+- **Metro**: Navigo Easy card, load day passes
+- **Dining**: Lunch menus 30% cheaper than dinner
+- **Free**: First Sunday mornings many museums
+
+### Solo Dining Secrets
+- **Counter seating**: Always available, best people-watching
+- **"Bonjour/Bonsoir"**: Essential greeting, shows respect
+- **Wine by glass**: Perfect for solo exploration
+- **Café culture**: Order "un café" for espresso, stay as long as you want
+
+### Safety & Etiquette
+- **Pickpockets**: Métro lines 1, 4, 6, 9 - keep bags zipped
+- **Tipping**: 5-10% appreciated, not mandatory
+- **Bread**: Always on table, not plate
+- **Emergency**: Pharmacy green cross always lit when open
+
+### Hidden Local Secrets
+- **Vélib' bikes**: Perfect for solo exploration, stations everywhere
+- **Marché des Enfants Rouges**: Oldest covered market, lunch counter perfect for solo travelers
+- **Promenade Plantée**: Elevated park, predecessor to NYC High Line
+- **Shakespeare & Company**: Stay for evening readings, meet fellow book lovers
+
+**Weather backup plans included for each day. All venues verified for solo traveler friendliness.**
+
+
+
+4. Role-Based / Persona Prompting (Expert persona)
+
+Input:
+You are a world-class French travel guide with 20 years of experience curating unforgettable Paris itineraries. 
+Your task: Design a 3-day itinerary for a solo traveler who loves art, local cuisine, and hidden gems. 
+Write as if personally guiding the traveler: include insider tips, off-the-beaten-path locations, and cultural advice. 
+Structure the plan by morning, afternoon, and evening. Provide short explanations for why each activity is recommended.
+
+Output:
+# Your Personal Paris Guide
+*3 Days of Art, Cuisine & Hidden Treasures*
+
+---
+
+*Bonjour mon ami! After 20 years guiding discerning travelers through my beloved Paris, I'm excited to share my most treasured secrets with you. This isn't just another itinerary—it's your key to experiencing Paris comme un vrai Parisien.*
+
+---
+
+## Day 1: The Heart of Ancient Paris
+**"Where kings walked and artists dreamed"**
+
+### Morning: The Louvre Like a Local (9:00-12:00)
+Listen, everyone goes to the Louvre, but 90% do it wrong. We're entering through the Carrousel entrance—it's my secret weapon to avoid the glass pyramid chaos. I want you to head straight to the Richelieu Wing first. Why? Because while tour groups stampede toward Mona Lisa, you'll have the magnificent French sculptures practically to yourself.
+
+**My insider move**: Visit Napoleon III's apartments on the first floor. These opulent rooms showcase how French royalty actually lived, and most visitors walk right past them. The guided audio here is exceptional—request it in English.
+
+**Why this matters**: Understanding French aristocratic taste will transform how you see every palace and museum afterward.
+
+### Afternoon: Secret Passages & Jewish Quarter (12:00-18:00)
+Now we're going completely off the tourist radar. Take Métro Line 3 to Bourse, and I'll introduce you to Paris's hidden shopping wonderland—the covered passages. Start with Galerie Vivienne, but here's what guidebooks won't tell you: the tiny wine bar inside, **A Priori Thé**, serves the most perfect croque-monsieur in the city.
+
+**Lunch secret**: Order their "Darjeeling Earl Grey" blend and sit at table 7—it has the best view of the stunning mosaic floor that even Parisians stop to photograph.
+
+Next, we're diving into **Passage des Panoramas**. I discovered this philatelic treasure trove in my third year guiding. The stamp and coin dealers here are fourth-generation family businesses. Even if you don't collect, watching these artisans work is mesmerizing.
+
+**Cultural insight**: These passages were the world's first shopping malls, created when gas lighting was revolutionary. You're walking through retail history.
+
+Evening walk to the Marais via **Rue des Rosiers**—the heart of Jewish Paris since the 13th century. The Holocaust memorial here isn't widely known, but it's deeply moving and perfectly sized for quiet reflection.
+
+### Evening: Authentic Marais Flavors (18:00-21:00)
+Forget L'As du Fallafel—tourists queue there for hours. **Mi-Va-Mi**, three doors down, makes equally incredible falafel without the wait. The owner, Sarah, has been perfecting her recipe for 15 years.
+
+**Dinner strategy**: After your falafel, I want you to experience **Le Mary Celeste** on Rue Commines. It's where young Parisian sommeliers go to discover natural wines. Sit at the bar, tell them "Marc recommended the evening selection," and they'll craft a perfect tasting journey.
+
+**Why this works**: Solo travelers get the best treatment at wine bars. Staff love sharing their passion with curious guests.
+
+---
+
+## Day 2: Left Bank Intellectual Soul
+**"Where Hemingway wrote and philosophers argued"**
+
+### Morning: Musée d'Orsay Masterclass (9:30-12:30)
+The d'Orsay is my personal favorite—it's intimate enough to truly connect with art, unlike the overwhelming Louvre. I've guided thousands through these halls, and here's my proven route: elevator to Level 5, start with the Impressionists when your mind is fresh.
+
+**Insider secret**: Room 32 has a hidden alcove behind the Renoir collection where you can sit and sketch. Bring a small notebook—this is where art students from École des Beaux-Arts come to study masterpieces up close.
+
+**My favorite moment**: Stand before Monet's "La Cathédrale de Rouen" series. Notice how he painted the same cathedral at different times of day. This is the birth of modern art happening before your eyes.
+
+**Cultural wisdom**: The French see art as intellectual nourishment, not entertainment. Take time to truly observe rather than just photograph.
+
+### Afternoon: Literary Legends & Hidden Gardens (12:30-18:00)
+Cross to the Left Bank via Pont Alexandre III—Paris's most ornate bridge. Your lunch destination is **Le Procope**, established 1686, where Voltaire drank 40 cups of coffee daily and Napoleon left his hat as collateral for unpaid bills.
+
+**Lunch insider tip**: Request table 18—it's in the back room where Benjamin Franklin negotiated American independence treaties. The cassoulet here uses a recipe unchanged since the 1700s.
+
+After lunch, we're visiting my favorite secret: **Square René Viviani**. This tiny medieval garden behind Notre-Dame offers the most romantic cathedral views in Paris. Medieval herbs still grow here—touch the lavender and thyme, exactly as monks did 800 years ago.
+
+**Hidden cultural gem**: **Musée de Cluny** (Museum of Medieval Art). The Lady and the Unicorn tapestries here are France's answer to the Mona Lisa, but you'll often have them nearly alone. The medieval building itself is a masterpiece—it's built on Roman thermal baths.
+
+### Evening: Saint-Germain Sophistication (18:00-21:00)
+**Apéritif at Café de Flore**—yes, it's touristy now, but I still bring clients here for one reason: sit at the same banquette where Simone de Beauvoir wrote "The Second Sex." Order their house champagne and watch modern-day philosophers debate at neighboring tables.
+
+**Dinner revelation**: **Restaurant Guy Savoy** at the Monnaie de Paris. Michelin-starred but surprisingly accessible for solo diners at the counter. Book the 7 PM "discovery menu"—it's Guy's personal selection, and he often stops by to chat with solo guests.
+
+**Evening magic**: Walk along the Seine to Pont des Arts. The "love locks" are gone, but something better remains—young Parisians gather here with guitars and wine every evening. You might witness an impromptu concert.
+
+---
+
+## Day 3: Montmartre's Artist Soul
+**"Where Picasso painted and Toulouse-Lautrec danced"**
+
+### Morning: Montmartre Like a Local Artist (9:00-12:00)
+Take Métro to Abbesses—the deepest station in Paris with original Art Nouveau entrance. But we're not climbing the touristy front route. We're taking **Rue Lepic**, past the two remaining windmills where Renoir painted "Bal du moulin de la Galette."
+
+**Breakfast secret**: Stop at **Des Gâteaux et du Pain** (63 Boulevard Pasteur). Their pain aux raisins is legendary among locals, and the owner, Pierre, studied under the baker who supplied Picasso's studio.
+
+**The real Montmartre**: **Musée de Montmartre** sits in Renoir's actual studio. Stand where he painted some of Impressionism's greatest works. The garden recreates the wild vineyard landscape that inspired him.
+
+**Insider knowledge**: The **Clos Montmartre vineyard** behind the museum produces 1,500 bottles annually. October harvest festival is when Parisians finally visit their own neighborhood—it's magical chaos.
+
+### Afternoon: Alternative Montmartre & Local Discoveries (12:00-18:00)
+**Lunch surprise**: **Le Consulat** appears touristy, but locals know the secret—their back room has Toulouse-Lautrec's original sketches on napkins, framed on the walls. Order the onion soup; the recipe came from the Moulin Rouge's original kitchen.
+
+Now for my favorite hidden gem: **Musée de la Vie Romantique**. This intimate mansion belonged to Dutch painter Ary Scheffer, where George Sand held her famous salons. The rose garden café serves tea in Limoges porcelain while peacocks stroll the grounds.
+
+**Cultural treasure**: **Rue Crémieux** in the 12th arrondissement. It's Instagram-famous now, but I discovered it 15 years ago when artists rented these colorful houses for practically nothing. Each house tells a story of Parisian creativity.
+
+### Evening: Modern Montmartre & Culinary Revolution (18:00-21:00)
+**Pre-dinner drink**: **Dirty Dick** in Pigalle. Don't let the name fool you—it's a sophisticated speakeasy where young Parisian mixologists perfect their craft. Ask for "Marc's friend special"—they know me.
+
+**Dinner experience**: **Le Chateaubriand**. I've been sending clients here since before it was famous. Chef Inaki Aizpitarte changes the menu daily based on market finds. As a solo traveler, request counter seating—you'll watch culinary artistry unfold.
+
+**If Chateaubriand is full**: **Septime** in the 11th. Equally innovative, slightly more accessible. The chef trained under Alain Passard and creates vegetables dishes that will change how you think about plant-based cuisine.
+
+**Perfect ending**: Night stroll through **Place du Tertre**. Yes, it's touristy by day, but at night, when the crowds disappear, you can feel the ghosts of Picasso and Utrillo. Buy a small sketch from one of the artists—not for the art, but for the story they'll tell about their craft.
+
+---
+
+## My Personal Insider Secrets
+
+### The Art of Solo Dining in Paris
+After two decades here, I've learned that Parisians respect solo diners who show genuine interest in cuisine. Always greet staff with "Bonjour/Bonsoir"—it's not politeness, it's acknowledging their humanity. Ask about wine pairings; French servers love educating curious guests.
+
+### Hidden Cultural Etiquette
+- Touch bread with your hands, never cut it with a knife
+- Keep hands visible on the table during meals
+- "S'il vous plaît" isn't just "please"—it's "if it pleases you," showing respect for their choice to help
+- Learn "Je ne parle pas bien français, mais j'essaie" (I don't speak French well, but I'm trying)—this phrase opens hearts
+
+### Money Wisdom from 20 Years of Guiding
+- Museum Pass pays for itself with three visits, but more importantly, skip-the-line access saves hours
+- Lunch menus at dinner restaurants offer identical quality for half the price
+- Natural wine bars charge by the glass fairly—perfect for solo exploration
+- Markets close at 1 PM; arrive by 11 AM for best selection and friendliest vendors
+
+### Safety & Solo Navigation
+- Pickpockets work Métro lines 1, 4, 6, and 9—keep nothing in back pockets
+- The 10th arrondissement transformed dramatically; evening walks around Canal Saint-Martin are now perfectly safe and beautiful
+- Pharmacy green crosses flash 24/7 when open—perfect for late-night emergencies
+- Download Citymapper app—Parisians use it too
+
+### My Secret Timing Strategy
+- Museums: 9-10 AM (before tour groups) or after 4 PM (Golden light through windows)
+- Restaurants: 12 PM lunch, 7:30 PM dinner—arrive exactly on time, shows respect
+- Markets: Tuesday, Thursday, Saturday mornings—each has distinct personality
+- Sunset: Check weather app, plan evening activities around golden hour
+
+**Remember, mon ami: Paris reveals herself slowly, like a fine wine opening. Don't rush—every café, every museum, every conversation is a chance to understand what makes this city eternal. Trust your instincts, embrace getting lost, and always say "Merci beaucoup" with genuine warmth.**
+
+*Bon voyage, and welcome to the real Paris!*
+
+**—Marc, Your Personal Parisian Guide**
+
+
+
+5. Self-Consistency Prompting (Multiple reasoning paths)
+
+Input:
+You are an expert French travel guide. Plan a 3-day Paris itinerary for a solo traveler interested in art, local cuisine, and hidden gems. 
+Think of 3 different itinerary approaches:
+- Approach 1: Landmarks-focused
+- Approach 2: Culinary & hidden gems-focused
+- Approach 3: Balanced cultural experience
+After evaluating the three approaches, select the most practical and enjoyable one. 
+Provide a detailed, structured itinerary with morning, afternoon, evening activities, including tips and local recommendations.
+
+Output:
+Let me think through three different approaches for this Paris itinerary:
+Approach 1: Landmarks-Focused
+Pros: Covers must-see sites, good for first-time visitors, Instagram-worthy
+Cons: Crowded, expensive, less authentic local experience, rushed schedule
+Structure: Louvre, Eiffel Tower, Arc de Triomphe, Notre-Dame, Sacré-Cœur
+Approach 2: Culinary & Hidden Gems-Focused
+Pros: Authentic local experience, unique discoveries, better value, intimate settings
+Cons: Might miss iconic Paris moments, requires more local knowledge, weather-dependent
+Structure: Food markets, neighborhood bistros, secret passages, local wine bars
+Approach 3: Balanced Cultural Experience
+Pros: Best of both worlds, flexible pacing, authentic yet comprehensive, solo-friendly
+Cons: Requires careful timing, more complex planning
+Structure: Major museum + hidden gem each day, mix of famous and local dining
+Selected Approach: Balanced Cultural Experience
+This approach is most practical because it satisfies the desire to see Paris's iconic art while discovering authentic local culture. For a solo traveler interested in art, cuisine, and hidden gems, this provides the richest experience without overwhelming logistics.
+
+# 3-Day Balanced Paris Itinerary
+*Perfect blend of iconic art, authentic cuisine, and hidden treasures*
+
+---
+
+## Day 1: Right Bank Classics Meet Secret Paris
+**Theme**: Royal heritage with bohemian discoveries
+
+### Morning: Louvre Strategic Visit (9:00-12:00)
+**Venue**: Musée du Louvre
+**Entry**: Carrousel entrance (avoid pyramid crowds)
+**Focus**: Denon Wing - Mona Lisa, Venus de Milo, Winged Victory
+**Hidden bonus**: Medieval Louvre foundations (basement level)
+**Duration**: 3 hours maximum to avoid museum fatigue
+
+**Why this works**: Early arrival means smaller crowds at major masterpieces. The medieval foundations show Paris's layered history that most visitors miss.
+
+**Practical tip**: Pre-book timed tickets online. Download Louvre app for offline room navigation.
+
+### Afternoon: Covered Passages & Marais Magic (12:00-18:00)
+**Route**: Galerie Vivienne → Passage des Panoramas → Place des Vosges
+
+**Lunch**: **A Priori Thé** (Galerie Vivienne) - elegant tearoom in stunning 1823 gallery setting. Perfect for solo dining with vintage ambiance and exceptional croque-monsieur.
+
+**Hidden gem**: **Passage Brady** ("Little India") - aromatic spice shops and authentic Indian textiles, completely off tourist radar.
+
+**Art discovery**: **Place des Vosges galleries** - browse contemporary art in historic 17th-century arcades where Victor Hugo lived.
+
+**Why this matters**: These covered passages were the world's first shopping malls. You're experiencing retail history while discovering modern Parisian creativity.
+
+### Evening: Authentic Marais Flavors (18:00-21:00)
+**Apéritif**: **La Belle Hortense** - unique wine bar/bookshop hybrid where literary discussions flow with natural wines.
+
+**Dinner**: **Breizh Café** (109 rue Vieille du Temple) - innovative Japanese-Breton crêpe fusion. Counter seating perfect for solo travelers, chef interaction guaranteed.
+
+**Evening stroll**: **Rue Saint-Antoine** illuminated walk to Place de la Bastille - beautiful historic route showcasing Paris's revolutionary heritage.
+
+**Solo dining insight**: Marais restaurants welcome solo diners. Staff appreciate genuine curiosity about ingredients and preparation methods.
+
+---
+
+## Day 2: Left Bank Intellectual Heritage
+**Theme**: Impressionist masterpieces meet literary legends
+
+### Morning: Musée d'Orsay Excellence (9:30-12:30)
+**Strategy**: Start Level 5 (Impressionists), work downward
+**Must-see**: Monet's Rouen Cathedral series, van Gogh's self-portraits, Renoir's dance paintings
+**Hidden treasure**: **Café des Hauteurs** - former Belle Époque restaurant with Seine views through giant clock face
+
+**Why Orsay over other museums**: Perfect size for deep appreciation without overwhelm. Former railway station architecture tells story of Paris's industrial transformation.
+
+**Insider move**: Sketch pad allowed in most rooms. Copying masters is how French art students still learn.
+
+### Afternoon: Saint-Germain Literary Trail (12:30-18:00)
+**Lunch**: **Le Procope** (13 rue de l'Ancienne Comédie) - oldest café in Paris (1686). Voltaire's table, Napoleon's hat story, unchanged cassoulet recipe.
+
+**Cultural immersion**: **Musée Delacroix** - intimate artist studio and secret garden. See where Romantic movement was born.
+
+**Hidden sanctuary**: **Square René Viviani** - medieval herb garden behind Notre-Dame with most romantic cathedral views. Perfect for journaling or quiet reflection.
+
+**Literary connection**: **Shakespeare & Company** - attend evening poetry readings (check schedule). Meet fellow book lovers in legendary setting.
+
+**Why this route works**: Walking connects all locations through Paris's most beautiful streets. Each stop deepens understanding of French intellectual tradition.
+
+### Evening: Left Bank Sophistication (18:00-21:00)
+**Sunset drinks**: **Café de Flore** - touristy but historically significant. Sit where Simone de Beauvoir wrote, observe modern philosophical debates.
+
+**Dinner**: **Le Comptoir du Relais** (9 carrefour de l'Odéon) - authentic bistro, no reservations. Arrive 6:30 PM or after 9 PM. Daily changing menu showcases classic French technique.
+
+**Night walk**: **Pont des Arts** to **Pont Neuf** - young Parisians gather with guitars and wine. Spontaneous cultural moments happen here.
+
+**Solo strategy**: Counter seating at bistros offers best experience. Staff enjoy sharing wine knowledge with curious guests.
+
+---
+
+## Day 3: Montmartre Artist Soul
+**Theme**: Bohemian heritage meets contemporary creativity
+
+### Morning: Montmartre Via Artist Route (9:00-12:00)
+**Breakfast**: **Des Gâteaux et du Pain** - legendary pain aux raisins among locals, owner trained under Picasso's baker.
+
+**Approach**: Métro to Abbesses, climb **Rue Lepic** past surviving windmills (avoid touristy funicular route).
+
+**Art pilgrimage**: **Musée de Montmartre** - Renoir's actual studio where he painted "Bal du moulin de la Galette." Garden recreates 1800s vineyard landscape.
+
+**Secret discovery**: **Clos Montmartre vineyard** - Paris's only vineyard, produces 1,500 bottles annually. October harvest festival draws locals.
+
+**Why this matters**: Understanding Montmartre's transformation from rural village to artist quarter illuminates Impressionism's birth.
+
+### Afternoon: Alternative Montmartre & Hidden Paris (12:00-18:00)
+**Lunch**: **Le Consulat** (18 rue Norvins) - where Picasso dined. Back room displays original Toulouse-Lautrec napkin sketches. Historic onion soup recipe.
+
+**Cultural gem**: **Musée de la Vie Romantique** - George Sand's salon in intimate mansion setting. Rose garden tea service in Limoges porcelain, peacocks stroll grounds.
+
+**Instagram secret**: **Rue Crémieux** (12th arr.) - most colorful street in Paris, former artist quarter before gentrification.
+
+**Local experience**: **Marché aux Puces** (weekends) - Europe's largest flea market. Authentic treasure hunting with fourth-generation dealers.
+
+### Evening: Culinary Innovation (18:00-21:00)
+**Cocktails**: **Dirty Dick** (Pigalle) - sophisticated speakeasy where young mixologists perfect craft. Request evening special.
+
+**Dinner**: **Le Chateaubriand** (129 avenue Parmentier) - daily changing tasting menu based on market finds. Counter seating for solo diners offers kitchen theater.
+
+**Backup option**: **Septime** - equally innovative, slightly more accessible. Vegetables-focused cuisine challenges preconceptions.
+
+**Perfect ending**: **Place du Tertre** at night - when crowds disappear, artist ghosts emerge. Purchase small sketch for authentic memento and story.
+
+**Why this works**: Montmartre evening reveals authentic creative spirit without daytime tourist chaos.
+
+---
+
+## Expert Solo Travel Intelligence
+
+### Cultural Navigation Mastery
+**Greeting protocol**: "Bonjour/Bonsoir" acknowledges dignity. Essential in shops, restaurants, even elevators with neighbors.
+
+**Dining etiquette**: 
+- Bread on table, never on plate
+- Hands visible during meals
+- "Je ne parle pas bien français, mais j'essaie" (I don't speak French well, but I'm trying) - opens hearts instantly
+
+**Wine culture**: Natural wine bars charge fairly by glass. Perfect for solo exploration. Ask for "dégustation" (tasting) to sample multiple selections.
+
+### Practical Wisdom
+**Museum strategy**: 
+- Pass Navigo for 3+ museums (€78, skip lines)
+- 9-10 AM or 4+ PM for best light and fewer crowds
+- Sketching permitted in most areas - brings deeper engagement
+
+**Transportation secrets**:
+- Métro lines 1, 4, 6, 9 - pickpocket zones, stay alert
+- Vélib' bike stations perfect for solo neighborhood exploration
+- Walking distances all under 20 minutes between daily activities
+
+**Money intelligence**:
+- Lunch menus 30-40% cheaper than dinner at same restaurants
+- Markets close 1 PM - arrive by 11 AM for best selection
+- Counter service at cafés cheaper than table service
+- Natural wine bars offer excellent value for solo discovery
+
+### Timing Perfection
+**Daily rhythm**:
+- 8 AM: Markets and bakeries peak freshness
+- 9-10 AM: Museums before tour groups
+- 12 PM: Lunch service begins (French punctuality expected)
+- 4-6 PM: Golden hour photography, aperitif culture
+- 7:30 PM: Dinner service optimal timing
+
+**Weather contingencies**:
+- Rain: Covered passages, extended museum time, cozy wine bars
+- Heat: Early morning activities, afternoon museums, evening river walks
+- Cold: Indoor markets, museum cafés, heated covered terraces
+
+### Solo Dining Excellence
+**Best strategies**:
+- Counter seating offers interaction and entertainment
+- Lunch reservations easier than dinner
+- "Menu du jour" showcases chef's daily inspiration
+- Bring small notebook - French respect thoughtful observation
+
+**Conversation starters**:
+- Ask about wine regions (French love sharing geographical pride)
+- Inquire about ingredient sourcing (shows serious food interest)
+- Compliment specific techniques (demonstrates culinary understanding)
+
+### Hidden Local Protocols
+**Pharmacy green cross**: Flashes when open 24/7 - crucial for emergencies
+**Boulangerie timing**: Fresh bread 7 AM, 4 PM daily - plan around these moments
+**Market vendors**: Learn names, show loyalty, receive best products and prices
+**Café culture**: Order "un café" for espresso, stay indefinitely without pressure
+
+**Emergency French phrases**:
+- "Excusez-moi, où est...?" (Excuse me, where is...?)
+- "Parlez-vous anglais?" (Do you speak English?)
+- "L'addition, s'il vous plaît" (The check, please)
+- "C'était délicieux!" (It was delicious!)
+
+This itinerary balances must-see cultural experiences with authentic local discoveries, creating memories that extend far beyond typical tourist encounters. Each day builds understanding of Paris's artistic heritage while revealing contemporary creative spirit through cuisine and hidden neighborhoods.
