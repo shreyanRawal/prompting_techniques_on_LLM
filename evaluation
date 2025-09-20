@@ -1,0 +1,218 @@
+| Prompting Style      | Model  | Relevance (5) | Structure (5) | Creativity (5) | Practicality (5) | Readability (5) | Total /25 |
+| -------------------- | ------ | ------------- | ------------- | -------------- | ---------------- | --------------- | ------------- |
+| Zero-Shot        | Claude | 5             | 4             | 4              | 5                | 4               | 22        |
+|                      | Grok   | 4             | 4             | 3              | 3                | 4               | 18        |
+| Few-Shot        | Claude | 5             | 5             | 5              | 4                | 5               | 24        |
+|                      | Grok   | 4             | 5             | 4              | 3                | 4               | 20        |
+| Chain-of-Thought | Claude | 5             | 5             | 5              | 5                | 4               | 24        |
+|                      | Grok   | 5             | 5             | 4              | 4                | 3               | 21        |
+| Role-Based       | Claude | 5             | 5             | 5              | 5                | 5               | 25        |
+|                      | Grok   | 5             | 5             | 5              | 4                | 5               | 24        |
+| Self-Consistency | Claude | 5             | 5             | 5              | 5                | 4               | 24        |
+|                      | Grok   | 5             | 4             | 5              | 4                | 4               | 22        |
+
+Final Totals:
+
+Claude Overall: 119 / 125
+
+Grok Overall: 105 / 125
+
+
+
+
+
+
+
+
+
+
+
+1. Criteria
+
+Used clear, consistent scoring categories (0–5 scale each):
+
+Relevance – Does the itinerary actually focus on art, local cuisine, and hidden gems (as asked)?
+
+Structure & Clarity – Is it well-organized (morning/afternoon/evening), easy to follow, concise?
+
+Creativity & Uniqueness – Does it go beyond generic suggestions, adding hidden gems, insider tips, or cultural notes?
+
+Practicality – Includes tips (tickets, timing, safety, budget, transport)? Solo traveler–friendly?
+
+Readability & Engagement – Is it enjoyable to read? Feels like a real guide or just a dry list?
+
+2. Scoring 
+
+a) Claude sonnet 4:
+
+Claude – Zero Shot Prompt
+
+Relevance: 5 (hits art, cuisine, hidden gems well).
+
+Structure: 4 (clear day-by-day with tips).
+
+Creativity: 4 (some hidden gems like Petit Palais, Canal St. Martin).
+
+Practicality: 5 (transport, budget, apps, safety).
+
+Readability: 4 (concise, slightly list-like).
+
+Total = 22/25
+
+Claude – Few Shot Prompt
+
+Relevance: 5 (all elements included).
+
+Structure: 5 (clear, follows example style).
+
+Creativity: 5 (Rue Crémieux, Père Lachaise, food tour).
+
+Practicality: 4 (less budget/transport detail).
+
+Readability: 5 (fun, engaging, very travel-blog-like).
+
+Total = 24/25
+
+Claude – Chain of Thought Prompt
+
+Relevance: 5
+
+Structure: 5 (step-by-step then summary).
+
+Creativity: 5 (hidden vineyard, Rodin garden, bar seating tips).
+
+Practicality: 5 (tickets, hours, apps, budget, solo safety).
+
+Readability: 4 (a bit long, guidebook style).
+
+Total = 24/25
+
+Claude – Role Based Prompt
+
+Relevance: 5
+
+Structure: 5
+
+Creativity: 5 (insider tips, cultural advice, Paris etiquette).
+
+Practicality: 5 (transport, tipping, crowd avoidance).
+
+Readability: 5 (personal, engaging, feels like a real guide).
+
+Total = 25/25
+
+Claude – Self-Consistency Prompt
+
+Relevance: 5
+
+Structure: 5 (compares 3 approaches, then selects best).
+
+Creativity: 5 (balanced design + evaluation reasoning).
+
+Practicality: 5 (budget, apps, safety, solo advice).
+
+Readability: 4 (slightly long due to evaluation section).
+
+Total = 24/25
+
+Insights
+
+Best overall: Role-based prompting (25/25) → feels like a real travel guide, warm and insightful.
+
+
+Most practical/structured: Chain of Thought & Self-consistency (24/25 each) → highly detailed and logical.
+
+Most concise but still rich: Few-shot (24/25) → clear, fun, easy to scan.
+
+Strong baseline: Zero-shot (22/25) → good, but less engaging compared to others.
+
+
+
+
+
+
+b) Grok LLM
+
+Grok – Zero Shot
+
+Relevance: 4 (covers big museums, cuisine, but fewer “hidden gems” than Claude).
+
+Structure: 4 (day split is clear, but sometimes just lists).
+
+Creativity: 3 (choices are mainstream; less offbeat detail).
+
+Practicality: 3 (few concrete tips like timing, transport).
+
+Readability: 4 (simple, straightforward).
+
+Total = 18/25
+
+Grok – Few Shot
+
+Relevance: 4 (hits art + cuisine, fewer unique hidden spots).
+
+Structure: 5 (very clean, easy to follow, matches example style).
+
+Creativity: 4 (adds quirky places like Rue des Rosiers).
+
+Practicality: 3 (basic guidance, but lacks transport/budget tips).
+
+Readability: 4 (pleasant, concise).
+
+Total = 20/25
+
+Grok – Chain of Thought
+
+Relevance: 5 (deep focus on art + hidden gems).
+
+Structure: 5 (planning steps + final clear itinerary).
+
+Creativity: 4 (mentions Musée de la Vie Romantique, Parc des Buttes-Chaumont).
+
+Practicality: 4 (good tips on walking routes, timing, cafés).
+
+Readability: 3 (a bit verbose; reasoning section breaks flow).
+
+Total = 21/25
+
+Grok – Role Based
+
+Relevance: 5 (really nails “insider guide” voice, hidden gems + cuisine).
+
+Structure: 5 (clear morning/afternoon/evening).
+
+Creativity: 5 (adds secret courtyards, quirky cafés, offbeat wine bars).
+
+Practicality: 4 (offers etiquette + dining solo advice, but fewer transport/budget details than Claude).
+
+Readability: 5 (engaging, like talking to a local expert).
+
+Total = 24/25
+
+Grok – Self-Consistency
+
+Relevance: 5 (strong mix of art, food, hidden spots).
+
+Structure: 4 (tries multiple drafts, but can feel repetitive).
+
+Creativity: 5 (final merged version is rich in unique ideas).
+
+Practicality: 4 (helpful tips, though less organized than Claude’s).
+
+Readability: 4 (longer, sometimes harder to skim).
+
+Total = 22/25
+
+Insights
+
+Best Grok version: Role-based (24/25) → strongest, feels authentic and exciting.
+
+Second best: Self-consistency (22/25) → thoughtful but less concise.
+
+Chain-of-thought (21/25) is solid but a bit heavy.
+
+Few-shot (20/25) is clean but not as rich.
+
+Zero-shot (18/25) is the weakest — too generic.
+
+Comparing both models: Claude’s Role-based (25/25) edges out Grok’s Role-based (24/25), mainly because Claude adds more practical solo traveler details (transport, budget hacks, safety).
