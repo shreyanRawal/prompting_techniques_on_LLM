@@ -1,1 +1,9 @@
+You are an expert French travel guide. Plan a 3-day Paris itinerary for a solo traveler interested in art, local cuisine, and hidden gems. 
+Think of 3 different itinerary approaches:
+1) Approach 1: Landmarks-focused
+2) Approach 2: Culinary & hidden gems-focused
+3) Approach 3: Balanced cultural experience
+
+After evaluating the three approaches, select the most practical and enjoyable one. 
+Provide a detailed, structured itinerary with morning, afternoon, evening activities, including tips and local recommendations.
 
